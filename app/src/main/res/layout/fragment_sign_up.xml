@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skip"
+                android:textSize="22sp"
+                android:id="@+id/skipSignUp"
+                android:layout_marginStart="340dp"
+                android:layout_marginEnd="15dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:layout_width="371dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/signUpEmail"
+                android:layout_gravity="center"
+                android:layout_marginTop="110dp"
+                android:hint="Email"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="20sp" />
+            <EditText
+                android:layout_width="371dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/fullName"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:hint="Full Name"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="371dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/signUpPassword"
+                android:textColor="@color/colorAccent"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorAccent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:hint="Password (Min 8 characters)"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="371dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmPassword"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:hint="Confirm Password"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:id="@+id/progressBar"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"/>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register Here"
+                android:textSize="20dp"
+                android:id="@+id/btnSignUp"
+                android:textColor="#50ffffff"
+                android:enabled="false"
+                android:padding="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/btnRed"
+                android:layout_marginTop="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/alreadyMember"
+                android:enabled="true"
+                android:textColor="#50ffffff"
+                android:textSize="17dp"
+                android:layout_marginTop="50dp"
+                android:text="Already a member? Sign In"/>
+
+
+        </LinearLayout>
+
+
+
+
+</FrameLayout>
